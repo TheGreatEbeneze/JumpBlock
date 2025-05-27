@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bka2gir2v1gi5"]
+[gd_scene load_steps=19 format=3 uid="uid://bka2gir2v1gi5"]
 
 [ext_resource type="Material" uid="uid://bhu6jjsokkjok" path="res://new_standard_material_3d.tres" id="1_hu2ao"]
 [ext_resource type="Script" uid="uid://cctd5tevyrqdd" path="res://playscreenback.gd" id="1_x72b1"]
@@ -16,6 +16,9 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="SphereMesh" id="SphereMesh_imi63"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kceln"]
+radius = 0.500499
 
 [sub_resource type="BoxMesh" id="BoxMesh_bk3w6"]
 
@@ -182,6 +185,9 @@ environment = SubResource("Environment_bk3w6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00901401, -0.198143, 0)
 material_override = ExtResource("1_hu2ao")
 mesh = SubResource("SphereMesh_imi63")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D"]
+shape = SubResource("SphereShape3D_kceln")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.66714, 0, 0, 0, 0.467019, 0, 0, 0, 3.56346, 0, -0.903085, 0)
