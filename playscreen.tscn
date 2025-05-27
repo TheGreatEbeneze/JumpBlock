@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d0p6jj7s3ykac"]
+
+[node name="playscreen" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 1.99998)
+scale = Vector2(0.36, -1.32)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -426.0
+offset_top = -222.0
+offset_right = -325.0
+offset_bottom = -179.0
+theme_override_font_sizes/font_size = 25
+text = "Play"
