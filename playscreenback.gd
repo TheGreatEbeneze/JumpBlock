@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	mover = randf_range(1, 2)
+	
 	
 	playscreen.hide()
 	animation_player.play("camera1")
